@@ -1,12 +1,7 @@
 <html>
   <head>
     <title>Allowance</title>
-  </head>
-  <body>
-    <h1>Allowance</h1>
-    <p money="0">Loading...</p>
-  </body>
-  <script>
+    <script>
       function newChange(type, reason, amount, date) {
       var money = Number(document.getElementById('moneyDisplay').attributes.money.value);
        switch(type) {
@@ -19,6 +14,13 @@
        }
        document.getElementById('moneyDisplay').innerHTML = 'Money: ' + money;
       }
+  </script>
+  </head>
+  <body>
+    <h1>Allowance</h1>
+    <p money="0" id="moneyDisplay">Loading...</p>
+  </body>
+  <script>
   // Inputs and Changes
   newChange('add', 'Dishes', 1, '10 - 24 - 2017');
   </script>
