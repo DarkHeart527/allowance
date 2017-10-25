@@ -12,6 +12,7 @@
          money = money - amount;
         break;
        }
+       document.getElementById('moneyDisplay').attributes.money.value = money;
        document.getElementById('moneyDisplay').innerHTML = 'Money: ' + money.toFixed(2);
       }
   </script>
