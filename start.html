@@ -11,6 +11,9 @@
         case 'remove':
          money = money - amount;
         break;
+        case 'note':
+         // Note Writing Here
+        break;
        }
        document.getElementById('moneyDisplay').attributes.money.value = money;
        document.getElementById('moneyDisplay').innerHTML = 'Money: ' + money.toFixed(2);
@@ -38,5 +41,7 @@
     newChange('add', 'Dishes', 1, '10 - 30 - 2017');
     newChange('add', 'Dishes', 1, '10 - 31 - 2017');
     newChange('add', 'Dishes', 1, '10 - 31 - 2017');
+    newChange('note', 'Nothing', '11 - 1 - 2017');
+    newChange('add', 'Dishes', 1, '11 - 2 - 2017');
   </script>
 </html>
