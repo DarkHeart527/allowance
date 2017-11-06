@@ -7,18 +7,19 @@
        switch(type) {
         case 'add': 
          money = money + amount;
+         var newEl = "<div class='inputData' id='" + type + "'>" + "<p style='border-bottom: 2px solid black' class='head'>" + type.toUpperCase() + " / " + date + "</p>" + "</div>"
         break;
         case 'remove':
          money = money - amount;
+         var newEl = "<div class='inputData' id='" + type + "'>" + "<p style='border-bottom: 2px solid black' class='head'>" + type.toUpperCase() + " / " + date + "</p>" + "</div>"
         break;
         case 'note':
-         // Note Writing Here
+         var newEl = "<div class='inputData' id='" + type + "'>" + "<p style='border-bottom: 2px solid black' class='head'>" + type.toUpperCase() + "</p>" + "</div>"
         break;
        }
        document.getElementById('moneyDisplay').attributes.money.value = money;
        document.getElementById('moneyDisplay').innerHTML = 'Money: ' + money.toFixed(2);
        var container = document.getElementById('container');
-       var newEl = "<div class='inputData' id='" + type + "'>" + "<p style='border-bottom: 2px solid black' class='head'>" + type.toUpperCase() + " / " + date + "</p>" + "</div>"
        container.innerHTML = newEl + container.innerHTML;
       }
   </script>
