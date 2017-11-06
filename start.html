@@ -18,7 +18,7 @@
        document.getElementById('moneyDisplay').attributes.money.value = money;
        document.getElementById('moneyDisplay').innerHTML = 'Money: ' + money.toFixed(2);
        var container = document.getElementById('container');
-       var newEl = "<div id=''" + type + ">" + "<p style='border-bottom: 2px solid black'>" + type.toUpperCase() + " / " + date + "</p>" + "</div>"
+       var newEl = "<div id='" + type + "'>" + "<p style='border-bottom: 2px solid black'>" + type.toUpperCase() + " / " + date + "</p>" + "</div>"
        container.innerHTML = newEl + container.innerHTML;
       }
   </script>
