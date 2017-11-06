@@ -18,7 +18,7 @@
        document.getElementById('moneyDisplay').attributes.money.value = money;
        document.getElementById('moneyDisplay').innerHTML = 'Money: ' + money.toFixed(2);
        var container = document.getElementById('container');
-       var newEl = document.createElement('div');
+       var newEl = "<div id=''" + type + "></div>"
        container.innerHTML = newEl + container.innerHTML;
        container.appendChild(newEl);
        var newEl2 = document.createElement('p');
