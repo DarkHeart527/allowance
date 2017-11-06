@@ -17,11 +17,14 @@
        }
        document.getElementById('moneyDisplay').attributes.money.value = money;
        document.getElementById('moneyDisplay').innerHTML = 'Money: ' + money.toFixed(2);
+       var container = document.getElementById('container');
        var newEl = document.createElement('div');
        newEl.id = type;
+       container.appendChild(newEl);
        var newEl2 = document.createElement('p');
        newEl2.innerHTML = type.toUpperCase() + " / " + date;
        newEl2.style = "border: 2px solid black"
+       newEl.appendChild(newEl2);
       }
   </script>
   <style>
