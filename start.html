@@ -7,11 +7,11 @@
        switch(type) {
         case 'add': 
          money = money + amount;
-         var newEl = "<div class='inputData' id='" + type + "'>" + "<p style='border-bottom: 2px solid black' class='head'>" + type.toUpperCase() + " / " + date + " / " + amount.toFixed(2) + "</p>" + reason + "</div>"
+         var newEl = "<div class='inputData' id='" + type + "'>" + "<p style='border-bottom: 2px solid black' class='head'>" + type.toUpperCase() + " / " + date + " / $" + amount.toFixed(2) + "</p>" + reason + "</div>"
         break;
         case 'remove':
          money = money - amount;
-         var newEl = "<div class='inputData' id='" + type + "'>" + "<p style='border-bottom: 2px solid black' class='head'>" + type.toUpperCase() + " / " + date + " / " + amount.toFixed(2) + "</p>" + reason + "</div>"
+         var newEl = "<div class='inputData' id='" + type + "'>" + "<p style='border-bottom: 2px solid black' class='head'>" + type.toUpperCase() + " / " + date + " / $" + amount.toFixed(2) + "</p>" + reason + "</div>"
         break;
         case 'note':
          var newEl = "<div class='inputData' id='" + type + "'>" + "<p style='border-bottom: 2px solid black' class='head'>" + type.toUpperCase() + ' / ' + date + "</p>" + reason + "</div>"
